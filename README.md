@@ -63,6 +63,8 @@ Estas señales se utilizan como entrada de un modelo de machine learning cuya fu
 - **Motivo:** Cada bloque resuelve un problema distinto.
 - **Evita:** Solapamientos y decisiones opacas.
 
+Este proyecto prioriza la claridad de diseño, el control del dato y la explicabilidad del sistema frente a la optimización de métricas aisladas.
+
 ## Limitaciones
 
 1. **Tamaño del dataset**

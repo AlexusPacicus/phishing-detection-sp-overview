@@ -36,8 +36,6 @@ La salida del modelo representa una estimación de riesgo asociada a cada URL, n
 
 La interpretación de esta salida se realiza fuera del propio modelo, mediante umbrales configurables que permiten adaptar el comportamiento del sistema al contexto operativo sin necesidad de modificar ni reentrenar el modelo.
 
-Este enfoque mantiene separadas la capacidad de estimación del modelo y la lógica de decisión, facilitando el análisis de errores, el ajuste de sensibilidad y la evolución del sistema.
-
 ## Limitaciones conocidas
 
 - **Dataset de tamaño reducido:** el modelo se entrena sobre un conjunto de datos curado y limitado, lo que condiciona la complejidad del modelo y el tipo de patrones que puede aprender.
