@@ -55,6 +55,4 @@ La arquitectura se compone de los siguientes bloques, actuando de forma secuenci
 
 El modelo de machine learning no actúa como un clasificador aislado, sino como un componente más dentro del sistema, encargado de combinar y ponderar señales extraídas previamente. Este enfoque prioriza estabilidad, explicabilidad y generalización frente a arquitecturas end-to-end, habitualmente entrenadas sobre datos ruidosos.
 
----
-
 Esta separación estricta de responsabilidades permite analizar y ajustar cada bloque de forma independiente, reduciendo opacidad y riesgo de leakage entre etapas.
