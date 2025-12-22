@@ -1,8 +1,16 @@
+# Sistema de detección de phishing orientado a usuarios en España  
+## Repositorio de presentación y diseño
+
 Este repositorio ha sido creado como material de presentación para entrevistas técnicas.
-Describe el diseño y las decisiones clave de un sistema de detección de URLs de phishing orientado específicamente a usuarios en España.
+Describe el diseño, las decisiones y los trade-offs de un sistema de detección de phishing
+orientado específicamente a usuarios en España.
 
-El repositorio contiene documentación sobre los principales componentes del pipeline (datos, scoring, features y modelo), con el objetivo de explicar el razonamiento detrás de cada decisión, no su implementación.
+El foco de este repositorio es explicar el razonamiento del sistema (datos, scoring,
+extracción de señales y modelo), no mostrar una implementación completa ni un producto
+desplegable.
 
+La implementación técnica y el histórico de desarrollo del sistema se mantienen en un
+repositorio de trabajo separado, actualmente privado.
 ![Visión general del sistema](assets/diagrams/pipeline.png)
 
 # Problema que aborda
