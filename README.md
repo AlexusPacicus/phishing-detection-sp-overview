@@ -1,5 +1,6 @@
 # Sistema de detección de phishing orientado a usuarios en España  
 ## Repositorio de presentación y diseño
+Pipeline de detección basado en análisis estructural de URLs, con control del dato y modelo explicable.
 
 Este repositorio ha sido creado como material de presentación para entrevistas técnicas.
 Describe el diseño, las decisiones y los trade-offs de un sistema de detección de phishing
