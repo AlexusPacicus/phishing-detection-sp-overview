@@ -17,6 +17,8 @@ El sistema parte de URLs obtenidas de feeds OSINT globales (OpenPhish, TweetFeed
 
 Tras este prefiltrado, se realiza una curación manual final para garantizar la calidad y coherencia del dataset. Sobre este conjunto curado se extraen señales estructurales y de contexto, que capturan propiedades del dominio y del host, el contexto de legitimidad asociado a marcas y país, y patrones de riesgo de infraestructura comúnmente utilizados en campañas de phishing.
 
+La curación manual se considera una solución transitoria, orientada a identificar criterios que posteriormente pueden incorporarse como reglas automáticas del sistema.
+
 El sistema evita depender de contenido web o de señales frágiles ligadas a campañas concretas, priorizando indicadores estables que generalizan mejor y reducen el riesgo de sobreajuste.
 
 Estas señales se utilizan como entrada de un modelo de machine learning cuya función es combinar y ponderar la información disponible de forma consistente, manteniendo una separación clara de responsabilidades dentro del pipeline.
