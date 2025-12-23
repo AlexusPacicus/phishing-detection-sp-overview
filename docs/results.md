@@ -53,9 +53,9 @@ Confirma el equilibrio: alta detección con falsos positivos controlados.
 ![](../assets/diagrams/matrix.png)
 
 #### 5.4 Distribución de scores
-Se observa separación entre clases y una “zona gris” esperable. El score es interpretable como riesgo continuo.
+Se observa separación entre clases y una “zona gris” esperable. 
 
-![](../assets/diagrams/scores_clase.png)
+![](../assets/diagrams/clases.png)
 
 #### 5.5 Importancia de señales
 Las señales estructurales e infraestructura dominan; legitimidad actúa como corrección. Coherente con el diseño.
