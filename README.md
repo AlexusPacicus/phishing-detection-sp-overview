@@ -97,14 +97,16 @@ Este proyecto prioriza la claridad de diseño, el control del dato y la explicab
 5. **Alcance limitado a URLs**
    - No cubre SMS, email completo ni contenido visual.
 
-## Documentación de soporte
+# Documentación de soporte
 
+- [Resultados y análisis del modelo](docs/results.md)
 - [Arquitectura del sistema](docs/arquitectura.md)
 - [Datos y proceso de curación](docs/data.md)
 - [Sistema de scoring heurístico](docs/scoring.md)
 - [Extracción de señales y features](docs/features.md)
 - [Modelo y criterios de decisión](docs/model.md)
+- [Evolución del sistema (v1 → v2)](docs/evolucion_v1_v2.md)
 
 ## Próximos pasos
 
-El siguiente paso natural del sistema es reforzar el bloque de heurísticas ampliando la sectorialización, avanzar hacia un dataset más representativo y complementar el enfoque actual con señales semánticas de mayor nivel que permitan estimar de forma más realista el ruido y la detección fuera de la distribución.
+El siguiente paso natural es ampliar la cobertura sectorial y reforzar el bloque heurístico con señales aprendidas durante la curación manual. A medio plazo, el sistema puede complementarse con señales semánticas para mejorar la detección fuera de la distribución actual.e
