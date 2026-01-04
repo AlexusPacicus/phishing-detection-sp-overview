@@ -63,13 +63,9 @@ Esta sección resume la evolución del sistema de scoring desde la v1 a la v2.
 - V2 fija un vector de features contractual, estable y reproducible.
 - Se reduce la dependencia del dataset y la redundancia para evitar leakage.
 
-## Resultados y efectos del rediseño
 
-- Dataset v2 más estable y reproducible, con control explícito del proceso de inclusión.
-- Reducción de ruido procedente de feeds OSINT mediante scoring previo a la curación.
-- Mejora cualitativa en la detección de campañas repetidas y casos límite.
-- Mayor coherencia entre dataset, features y evaluación.
-- Base más fiable para análisis de falsos positivos y falsos negativos.
 
-Estos efectos permiten utilizar la v2 como baseline técnico fiable sobre el que
-iterar versiones posteriores con mayor complejidad.
+| Versión               | Dataset          | Validación                                                    | Modelo              | Precision (phishing) | Recall (phishing) | F1       | ROC-AUC  | Observaciones                                                                                                                                            |
+| --------------------- | ---------------- | ------------------------------------------------------------- | ------------------- | -------------------- | ----------------- | -------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **v1 (exploratoria)** | 200 URLs (50/50) | Stratified CV (k=5..10)                                       | Logistic Regression | 0.92                 | 0.90              | 0.91     | 0.95     | Métricas altas obtenidas en un dataset pequeño, con features no contractuales. Resultados poco robustos fuera de distribución.     |
+| **v2 (baseline)**     | 482 URLs (50/50) | Hold-out 80/20 + GroupShuffleSplit (anti-leakage por entidad) | Logistic Regression | **0.94**             | **0.99**          | **0.96** | **0.99** | Baseline contractual, reproducible y auditable. Alta sensibilidad al phishing con control explícito de falsos positivos en dominios legítimos españoles. |
